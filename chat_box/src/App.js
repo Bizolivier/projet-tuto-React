@@ -23,7 +23,11 @@ class App extends Component {
             <Message />
           </div>
         </div>
-        <Formulaire addMessage={this.addMessage} />
+        <Formulaire
+          length={140}
+          pseudo={this.state.pseudo}
+          addMessage={this.addMessage}
+        />
       </div>
     );
   }
